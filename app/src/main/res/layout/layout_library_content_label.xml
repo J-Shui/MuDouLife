@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:id="@+id/label_item_1"
+        style="@style/library_content_label_item"
+        android:text="@string/material_name"
+        />
+    <TextView
+        android:id="@+id/label_item_2"
+        style="@style/library_content_label_item"
+        android:text="@string/price"
+        />
+    <TextView
+        android:id="@+id/label_item_3"
+        style="@style/library_content_label_item"
+        android:text="@string/number"
+        />
+    <TextView
+        android:id="@+id/label_item_4"
+        style="@style/library_content_label_item"
+        android:text="@string/floor"
+        android:visibility="gone"
+        />
+</LinearLayout>

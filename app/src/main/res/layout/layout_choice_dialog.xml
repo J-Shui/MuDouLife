@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_info_dialog">
+
+    <TextView
+        android:id="@+id/choice_dialog_message_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/receive_dialog_tittle"
+        android:textColor="@color/color_000000"
+        />
+
+    <Button
+        android:id="@+id/choice_dialog_positive_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/clickable_button_bg"
+        android:gravity="center"
+        android:text="@string/string_sure"
+        android:textColor="@color/color_ffffff"
+        android:layout_below="@id/choice_dialog_message_id"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="18dp"
+        />
+
+    <Button
+        android:id="@+id/choice_dialog_negative_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/clickable_button_bg"
+        android:gravity="center"
+        android:text="@string/string_cancel"
+        android:textColor="@color/color_ffffff"
+        android:layout_below="@id/choice_dialog_message_id"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="18dp"
+        />
+</RelativeLayout>

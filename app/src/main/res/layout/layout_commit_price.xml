@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    >
+    <Button
+        android:id="@+id/sure_btn"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/clickable_button_bg"
+        android:text="@string/commit"
+        android:textColor="@color/color_ffffff" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/sure_btn"
+        android:layout_marginBottom="16dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/close_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@mipmap/close_img" />
+
+            <TextView
+                android:id="@+id/step_1_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="48dp"
+                android:text="@string/commit_1"
+                android:textColor="@color/color_666666" />
+
+            <TextView
+                android:id="@+id/step_2_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/step_1_id"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/commit_2"
+                android:textColor="@color/color_666666" />
+
+            <View
+                android:id="@+id/commit_step_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/step_2_id"
+                android:layout_marginTop="12dp"
+                android:background="@color/color_999999" />
+
+            <TextView
+                android:id="@+id/choose_project_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/commit_step_line"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/choose_project"
+                android:textColor="@color/color_666666" />
+
+            <ImageView
+                android:id="@+id/add_project_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/choose_project_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:src="@mipmap/add_img" />
+
+            <TextView
+                android:id="@+id/already_choose_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_project_img"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="48dp"
+                android:text="@string/already_choose_project"
+                android:textColor="@color/color_666666" />
+            <TextView
+                android:id="@+id/service_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/already_choose_text"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="48dp"
+                android:text="@string/technology_service_type"
+                android:textColor="@color/color_666666" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/service_text"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/edit_text_box_bg"
+                android:id="@+id/service_container"
+                android:paddingBottom="16dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/service_label_container"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:id="@+id/service_item_container_1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/service_item1_name"
+                            style="@style/already_choose_item"
+                            android:text="@string/bian_hao"
+                            />
+
+                        <TextView
+                            android:id="@+id/service_item1_value"
+                            android:text="@string/material_content"
+                            style="@style/already_choose_item_marginTop"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/service_item_container_2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/service_item2_name"
+                            android:text="@string/material_name"
+                            style="@style/already_choose_item" />
+
+                        <TextView
+                            android:id="@+id/service_item2_value"
+                            android:text="@string/material_content"
+                            style="@style/already_choose_item_marginTop" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/service_item_container_3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/service_item3_name"
+                            android:text="@string/price"
+                            style="@style/already_choose_item" />
+
+                        <TextView
+                            android:id="@+id/service_item3_value"
+                            android:text="@string/material_content"
+                            style="@style/already_choose_item_marginTop"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/service_item_container_4"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/service_item4_name"
+                            android:text="@string/number"
+                            style="@style/already_choose_item" />
+
+                        <TextView
+                            android:id="@+id/service_item4_value"
+                            android:text="@string/material_content"
+                            style="@style/already_choose_item_marginTop" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/total_value"-->
+                    <!--android:text="@string/total"-->
+                    <!--style="@style/already_choose_item"-->
+                    <!--android:layout_marginTop="16dp"-->
+                    <!--/>-->
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/material_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/service_container"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="48dp"
+                android:text="@string/material_type"
+                android:textColor="@color/color_666666" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/material_text"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/edit_text_box_bg"
+                android:id="@+id/project_container"
+                android:paddingBottom="16dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/material_label_container"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:id="@+id/project_item_container_1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/project_item1_name"
+                            style="@style/already_choose_item"
+                            android:text="@string/bian_hao"
+                            />
+
+                        <TextView
+                            android:id="@+id/project_item1_value"
+                            android:text="@string/material_content"
+                            style="@style/already_choose_item_marginTop"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/project_item_container_2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/project_item2_name"
+                            android:text="@string/material_name"
+                            style="@style/already_choose_item" />
+
+                        <TextView
+                            android:id="@+id/project_item2_value"
+                            android:text="@string/material_content"
+                            style="@style/already_choose_item_marginTop" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/project_item_container_3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/project_item3_name"
+                            android:text="@string/price"
+                            style="@style/already_choose_item" />
+
+                        <TextView
+                            android:id="@+id/project_item3_value"
+                            android:text="@string/material_content"
+                            style="@style/already_choose_item_marginTop"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/project_item_container_4"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/project_item4_name"
+                            android:text="@string/number"
+                            style="@style/already_choose_item" />
+
+                        <TextView
+                            android:id="@+id/project_item4_value"
+                            android:text="@string/material_content"
+                            style="@style/already_choose_item_marginTop" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/total_value"-->
+                    <!--android:text="@string/total"-->
+                    <!--style="@style/already_choose_item"-->
+                    <!--android:layout_marginTop="16dp"-->
+                    <!--/>-->
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

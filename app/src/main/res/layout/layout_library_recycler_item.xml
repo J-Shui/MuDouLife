@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/level_list_select_img"
+        android:id="@+id/library_recycler_select"
+        />
+    <include layout="@layout/layout_library_label_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_container"
+        android:layout_toEndOf="@id/library_recycler_select"
+        android:layout_marginStart="16dp"
+        />
+
+</RelativeLayout>

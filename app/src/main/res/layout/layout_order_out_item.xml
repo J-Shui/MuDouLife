@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/content_recycler_container"
+    android:paddingBottom="4dp"
+    >
+    <TextView
+        android:id="@+id/order_text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_666666"
+        android:textSize="13sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/order_number" />
+
+    <TextView
+        android:id="@+id/order_number_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/order_text_id"
+        android:textColor="@color/color_666666"
+        android:textSize="13sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        android:text="BF00000000000" />
+
+    <TextView
+        android:id="@+id/order_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="@string/accept_order"
+        android:textSize="13sp"
+        android:textColor="@color/color_fec300"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view"
+        android:layout_below="@id/order_number_id"
+        android:layout_marginTop="4dp"
+        />
+
+    <Button
+        style="@style/recycler_item_button"
+        android:id="@+id/button_right"
+        android:layout_alignParentEnd="true"
+        android:text="@string/order_receive"
+        android:background="@drawable/clickable_button_bg"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@id/recycler_view"
+        />
+
+    <Button
+        style="@style/recycler_item_button"
+        android:id="@+id/button_left"
+        android:layout_marginEnd="30dp"
+        android:layout_toStartOf="@id/button_right"
+        android:text="@string/cancel_order"
+        android:background="@drawable/un_clickable_button_bg"
+        android:layout_below="@id/recycler_view"
+        />
+</RelativeLayout>

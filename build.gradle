@@ -1,0 +1,38 @@
+//<?xml version="1.0" encoding="UTF-8"?>
+//<project version="4">
+//  <component name="AndroidLayouts">
+//    <shared>
+//      <config>
+//        <device id="Nexus 5" />
+//      </config>
+//    </shared>
+//  </component>
+//  <component name="AndroidLogFilters">
+//    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+//    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+//  </component>
+//  <component name="BookmarkManager">
+//    <bookmark url="file://$PROJECT_DIR$/app/src/main/java/com/mudoulife/di/component/MainComponent.java" line="25" />
+//  </component>
+//  <component nam
+buildscript {
+
+  repositories {
+    google()
+    jcenter()
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:3.3.1'
+
+
+    // NOTE: Do not place your application dependencies here; they belong
+    // in the individual module build.gradle files
+  }
+}
+
+allprojects {
+  repositories {
+    google()
+    jcenter()
+  }
+}

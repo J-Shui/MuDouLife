@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/transparent"
+        android:hint="@string/input_account"
+        android:textSize="15sp"
+        android:textColor="@color/color_808080"
+        android:id="@+id/edit_account"
+        android:gravity="center_vertical"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_808080"
+        android:id="@+id/line_account"
+        android:layout_below="@id/edit_account"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        />
+</merge>

@@ -1,0 +1,118 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>  //一定要，否则有状态栏显示，不能全屏
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="NoTittleTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="colorPrimary">@color/color_fec300</item>
+         <item name="colorPrimaryDark">@color/color_fec300</item>
+    </style>
+
+    <style name="textView_margin_top_16dp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textColor">@color/color_666666</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="already_choose_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_666666</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="already_choose_item_marginTop" parent="already_choose_item">
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="library_top_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+    <style name="library_left_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_000000</item>
+        <item name="android:background">@color/color_e6e6e6</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="library_content_label_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_000000</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="five_point_star_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/level_list_five_point_star</item>
+        <item name="android:contentDescription">@string/star</item>
+        <item name="android:layout_marginStart">8dp</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="shade_view_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/tran_30_color</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="recycler_item_button">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_below">@id/item_name_4</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+
+    <style name="login_edit_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">51dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:layout_marginStart">32dp</item>
+        <item name="android:layout_marginEnd">32dp</item>
+        <item name="android:textColorHint">@color/color_808080</item>
+        <item name="android:textColor">@color/color_000000</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="login_edit_bg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/color_808080</item>
+        <item name="android:layout_marginStart">32dp</item>
+        <item name="android:layout_marginEnd">32dp</item>
+    </style>
+</resources>

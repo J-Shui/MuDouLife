@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    tools:context=".ui.activity.LibraryBaseActivity">
+    <include layout="@layout/layout_tittle_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/library_tittle_container"
+        />
+    <include layout="@layout/layout_library_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/library_top_container"
+        android:layout_below="@id/library_tittle_container"
+        android:layout_marginTop="12dp"
+        android:visibility="gone"
+        />
+    <include layout="@layout/layout_library_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/library_bottom_container"
+        android:layout_alignParentBottom="true"
+        />
+    <include layout="@layout/layout_library_left"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:id="@+id/library_left_container"
+        android:layout_below="@id/library_top_container"
+        android:layout_above="@id/library_bottom_container"
+        />
+    <include layout="@layout/layout_library_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/library_left_container"
+        android:layout_below="@id/library_top_container"
+        android:id="@+id/library_content_container"
+        android:layout_above="@id/library_bottom_container"
+        android:layout_marginTop="24dp"
+        />
+    <View
+        android:id="@+id/shade_view"
+        style="@style/shade_view_style"
+        android:layout_toEndOf="@id/library_left_container"
+        android:layout_below="@id/library_top_container"
+        android:layout_above="@id/library_bottom_container"
+        />
+</RelativeLayout>

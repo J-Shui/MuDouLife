@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+    <Button
+        android:id="@+id/library_top_service"
+        style="@style/library_top_item"
+        android:background="@color/color_fec300"
+        android:text="@string/technology_service_type"
+        />
+    <Button
+        android:id="@+id/library_top_material"
+        style="@style/library_top_item"
+        android:background="@color/color_999999"
+        android:text="@string/material_type"
+        />
+</LinearLayout>
